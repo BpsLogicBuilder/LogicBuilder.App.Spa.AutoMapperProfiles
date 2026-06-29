@@ -11,7 +11,7 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<Description>This library serves as a shared location for mapping profiles which map the parameters whcih capture the form features defined in the logic builder and the serializable descriptors used to implement those features in a single page application (SPA) at runtime..</Description>
+		<Description>This library serves as a shared location for mapping profiles which map the parameters encapsulating the form features defined in the logic builder to the serializable descriptors used to implement those features in a single page application (SPA) at runtime.</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>First release.</PackageReleaseNotes>
 		<PackageTags>form configuration</PackageTags>
@@ -30,10 +30,20 @@
 		<ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\icon.png" Pack="true" PackagePath="\" Visible="False" />
+	</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="16.1.1" />
     <PackageReference Include="LogicBuilder.App.Spa.Forms.Configuration" Version="1.0.1" />
     <PackageReference Include="LogicBuilder.App.Spa.Forms.Parameters" Version="1.0.1" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
+		<PackageReference Include="MinVer" Version="7.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
   </ItemGroup>
 
 </Project>
