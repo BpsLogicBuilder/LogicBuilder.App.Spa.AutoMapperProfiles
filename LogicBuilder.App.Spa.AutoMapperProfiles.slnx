@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LogicBuilder.App.Spa.AutoMapperProfiles.Tests/LogicBuilder.App.Spa.AutoMapperProfiles.Tests.csproj" />
+  <Project Path="LogicBuilder.App.Spa.AutoMapperProfiles/LogicBuilder.App.Spa.AutoMapperProfiles.csproj" />
+</Solution>
