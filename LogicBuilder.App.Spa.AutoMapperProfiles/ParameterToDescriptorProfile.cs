@@ -34,7 +34,6 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles
             CreateMap<DomainRequestParameters, DomainRequestDescriptor>();
             CreateMap<DropdownSelectorControlSettingsParameters, DropdownSelectorControlSettingsDescriptor>();
             CreateMap<DropDownTemplateParameters, DropDownTemplateDescriptor>();
-            CreateMap<DummyConstructor, DummyConstructor>();
             CreateMap<EditFormSettingsParameters, EditFormSettingsDescriptor>();
             CreateMap<FilterDefinitionParameters, FilterDefinitionDescriptor>();
             CreateMap<FilterGroupParameters, FilterGroupDescriptor>();

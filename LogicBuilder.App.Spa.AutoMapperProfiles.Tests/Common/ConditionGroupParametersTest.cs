@@ -1,6 +1,7 @@
 using AutoMapper;
 using LogicBuilder.App.Spa.Forms.Configuration.Common;
 using LogicBuilder.App.Spa.Forms.Parameters.Common;
+using LogicBuilder.EntityFrameworkCore.Mapping;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
@@ -76,7 +77,10 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles.Tests.Common
                 cfg.AddProfile<BaseClassMappings>();
                 cfg.AddProfile<ConnectorProfile>();
                 cfg.AddProfile<ParameterToDescriptorProfile>();
+                cfg.AddProfile<ExpansionParameterToDescriptorMappingProfile>();
+                cfg.AddProfile<ExpressionParameterToDescriptorMappingProfile>();
             }, NullLoggerFactory.Instance);
+            MapperConfiguration.AssertConfigurationIsValid();
 
             serviceProvider ??= new ServiceCollection()
                 .AddSingleton<AutoMapper.IConfigurationProvider>
