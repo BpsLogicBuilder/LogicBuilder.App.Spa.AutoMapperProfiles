@@ -66,6 +66,7 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles.Tests.Common
                 cfg.AddProfile<ExpansionParameterToDescriptorMappingProfile>();
                 cfg.AddProfile<ExpressionParameterToDescriptorMappingProfile>();
             }, NullLoggerFactory.Instance);
+            MapperConfiguration.AssertConfigurationIsValid();
 
             serviceProvider ??= new ServiceCollection()
                 .AddSingleton<AutoMapper.IConfigurationProvider>
