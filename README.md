@@ -4,6 +4,7 @@
 [![CodeQL](https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.AutoMapperProfiles/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.AutoMapperProfiles/actions/workflows/github-code-scanning/codeql)
 [![codecov](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Spa.AutoMapperProfiles/graph/badge.svg?token=VUFZST0PWQ)](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Spa.AutoMapperProfiles)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=BpsLogicBuilder_LogicBuilder.App.Spa.AutoMapperProfiles&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=BpsLogicBuilder_LogicBuilder.App.Spa.AutoMapperProfiles)
+[![NuGet](https://img.shields.io/nuget/v/LogicBuilder.App.Spa.AutoMapperProfiles.svg)](https://www.nuget.org/packages/LogicBuilder.App.Spa.AutoMapperProfiles)
 
 A .NET Standard 2.0 library that provides AutoMapper profiles for mapping form parameter objects to their corresponding descriptor objects used in Single Page Applications (SPAs) built with Logic Builder.
 

@@ -51,7 +51,8 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles.Tests.Common
                 title: "Courses",
                 placeHolder: "Select courses",
                 type: "text",
-                multiSelectTemplate: multiSelectTemplate
+                multiSelectTemplate: multiSelectTemplate,
+                modelType: typeof(string).AssemblyQualifiedName!
             );
             IMapper mapper = serviceProvider.GetRequiredService<IMapper>();
 
@@ -67,8 +68,8 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles.Tests.Common
             Assert.Equal("Select courses", descriptor.Placeholder);
             Assert.Equal("text", descriptor.Type);
             Assert.Equal(multiSelectTemplate.TemplateName, descriptor.MultiSelectTemplate.TemplateName);
+            Assert.Equal(typeof(string).AssemblyQualifiedName!, descriptor.ModelType);
             Assert.Null(descriptor.ValidationSetting);
-            Assert.Null(descriptor.ModelType);
         }
 
         [Fact]
