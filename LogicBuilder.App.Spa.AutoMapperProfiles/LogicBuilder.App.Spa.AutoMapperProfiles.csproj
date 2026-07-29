@@ -13,7 +13,7 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<Description>This library serves as a shared location for mapping profiles which map the parameters encapsulating the form features defined in the logic builder to the serializable descriptors used to implement those features in a single page application (SPA) at runtime.</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<PackageReleaseNotes>First release.</PackageReleaseNotes>
+		<PackageReleaseNotes>Making NuGet one of the release feeds.</PackageReleaseNotes>
 		<PackageTags>form configuration</PackageTags>
 		<Copyright>Copyright © BPS 2026</Copyright>
 		<RepositoryUrl>https://github.com/BpsLogicBuilder/LogicBuilder.App.Spa.AutoMapperProfiles</RepositoryUrl>
@@ -24,9 +24,7 @@
 		<AssemblyOriginatorKeyFile>..\LogicBuilder.Rules.snk</AssemblyOriginatorKeyFile>
 		<SignAssembly>true</SignAssembly>
 		<MinVerTagPrefix>v</MinVerTagPrefix>
-		<DebugType>embedded</DebugType>
 		<Deterministic>true</Deterministic>
-		<EmbedAllSources>true</EmbedAllSources>
 		<ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
@@ -36,10 +34,10 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="16.1.1" />
-    <PackageReference Include="LogicBuilder.App.Spa.Forms.Configuration" Version="1.0.1" />
-    <PackageReference Include="LogicBuilder.App.Spa.Forms.Parameters" Version="1.0.1" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="LogicBuilder.App.Spa.Forms.Configuration" Version="1.0.2" />
+    <PackageReference Include="LogicBuilder.App.Spa.Forms.Parameters" Version="1.0.3" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.301" PrivateAssets="All" />
 		<PackageReference Include="MinVer" Version="7.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

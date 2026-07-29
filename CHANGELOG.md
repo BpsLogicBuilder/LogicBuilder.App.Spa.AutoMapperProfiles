@@ -1,3 +1,4 @@
+* 2026-07-29 - AB#205: Making NuGet one of the release feeds.
 * 2026-07-09 - AB#172: Ensure testing AutoMapper profiles are vaild.
 * 2026-06-30 - AB#185: Update CD workflow to add GitHub Packages as NuGet source.
 * 2026-06-30 - AB#185: Add CI/CD workflows  and tests plus README update.
