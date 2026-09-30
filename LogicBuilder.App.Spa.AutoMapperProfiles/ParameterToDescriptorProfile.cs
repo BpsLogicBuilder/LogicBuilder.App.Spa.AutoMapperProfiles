@@ -14,6 +14,7 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles
             CreateMap<AggregateTemplateParameters, AggregateTemplateDescriptor>();
             CreateMap<CellListTemplateParameters, CellListTemplateDescriptor>();
             CreateMap<CellTemplateParameters, CellTemplateDescriptor>();
+            CreateMap<ChatFormSettingsParameters, ChatFormSettingsDescriptor>();
             CreateMap<ColumnSettingsParameters, ColumnSettingsDescriptor>();
             CreateMap<CommandColumnParameters, CommandColumnDescriptor>();
             CreateMap<ConditionGroupParameters, ConditionGroupDescriptor>();
@@ -54,6 +55,7 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles
             CreateMap<MultiSelectTemplateParameters, MultiSelectTemplateDescriptor>();
             CreateMap<RequestDetailsParameters, RequestDetailsDescriptor>();
             CreateMap<SelectParameters, SelectDescriptor>();
+            CreateMap<SignalRConnectionParameters, SignalRConnectionDescriptor>();
             CreateMap<SortParameters, SortDescriptor>();
             CreateMap<TextFieldTemplateParameters, TextFieldTemplateDescriptor>();
             CreateMap<ValidationMessageParameters, ValidationMessageDescriptor>();
