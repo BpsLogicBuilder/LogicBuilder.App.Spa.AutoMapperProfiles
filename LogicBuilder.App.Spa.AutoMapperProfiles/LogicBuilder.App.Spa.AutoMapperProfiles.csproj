@@ -35,8 +35,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="16.2.0" />
-		<PackageReference Include="LogicBuilder.App.Spa.Forms.Configuration" Version="1.0.3-alpha.0.1" />
-		<PackageReference Include="LogicBuilder.App.Spa.Forms.Parameters" Version="1.0.4-alpha.0.1" />
+		<PackageReference Include="LogicBuilder.App.Spa.Forms.Configuration" Version="1.0.3-alpha.0.4" />
+		<PackageReference Include="LogicBuilder.App.Spa.Forms.Parameters" Version="1.0.4-alpha.0.7" />
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
 		<PackageReference Include="MinVer" Version="8.0.0">
 			<PrivateAssets>all</PrivateAssets>

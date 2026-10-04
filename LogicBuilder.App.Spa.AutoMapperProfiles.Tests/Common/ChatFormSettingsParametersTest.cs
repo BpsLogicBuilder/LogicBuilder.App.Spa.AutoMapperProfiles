@@ -31,13 +31,14 @@ namespace LogicBuilder.App.Spa.AutoMapperProfiles.Tests.Common
                 "SendMessageToAgent",
                 "SessionInitialized"
             );
-            var parameters = new ChatFormSettingsParameters("knowledge-search-only", 550, 600, signalR);
+            var parameters = new ChatFormSettingsParameters("Agent Chat", "knowledge-search-only", 550, 600, signalR);
             IMapper mapper = serviceProvider.GetRequiredService<IMapper>();
 
             // Act
             var descriptor = mapper.Map<ChatFormSettingsDescriptor>(parameters);
 
             // Assert
+            Assert.Equal("Agent Chat", descriptor.Title);
             Assert.Equal("knowledge-search-only", descriptor.AgentConfigurationIdentifier);
             Assert.Equal(550, descriptor.ChatHeight);
             Assert.Equal(600, descriptor.ChatWidth);
