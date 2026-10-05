@@ -1,3 +1,4 @@
+* 2026-10-04 - AB#231: Latest LogicBuilder.App.Spa.Forms.Parameters/Configuration.
 * 2026-10-04 - AB#231: Add Title parameter to ChatFormSettings.
 * 2026-09-30 - AB#231: Chat form and SignalR hub mappings.
 * 2026-07-29 - AB#205: Making NuGet one of the release feeds.
